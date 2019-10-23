@@ -9,9 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Result"></activity>
-        <activity android:name=".Quit" />
-        <activity android:name=".Quizpage" />
+        <activity android:name=".Result"
+            android:parentActivityName=".MainActivity"></activity>
+        <activity android:name=".Quit"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".Quizpage"
+            android:parentActivityName=".MainActivity"/>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
